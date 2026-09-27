@@ -1,0 +1,19 @@
+{
+  "name": "design-dashboard-starter",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "npm install -g pnpm@10 @anthropic-ai/claude-code && pnpm install",
+  "forwardPorts": [5173, 6006],
+  "portsAttributes": {
+    "5173": { "label": "App (pnpm dev)", "onAutoForward": "notify" },
+    "6006": { "label": "Storybook", "onAutoForward": "openBrowser" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
+  "hostRequirements": { "cpus": 4 }
+}

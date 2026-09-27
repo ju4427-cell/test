@@ -1,0 +1,31 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Overview/Planning Docs" />
+
+# Planning Docs
+
+Where this project's written decisions land. Code follows the documents, not the other way round.
+
+## Before any code
+
+| # | Document | File | Status |
+|---|---|---|---|
+| 1 | Project Summary | `docs/01-project-summary.md` | Not started |
+| 2 | UX Flow (scenarios · routes · data model · states · component list) | `docs/02-ux-flow.md` | Not started |
+| 3 | Visual Direction | `docs/03-visual-direction.md` | Not started |
+
+## After tokens, before assembly
+
+| # | Document | File | Status |
+|---|---|---|---|
+| 4 | Implementation Plan (schema first, then components in dependency order) | `docs/04-implementation-plan.md` | Not started |
+
+Document 4 is written later than the first three. It turns the UX Flow into a build order.
+Read it once, agree with it, then build. Fixing a plan is cheaper than fixing components.
+
+The `planning-docs` skill updates Status each time a document is written.
+
+Once a document is written, its body is registered as its own page in this section,
+so everything decided can be read here next to the components.
+
+Worked examples live in `docs/example/`.
